@@ -88,6 +88,7 @@ const Box: React.FC<{
 let lastBoxId = 1
 
 export const Scene: React.FC<{project: IProject}> = ({project}) => {
+  console.log('basic-dom')
   const [boxes, setBoxes] = useState<Array<string>>(['0', '1'])
 
   // This is cheap to call and always returns the same value, so no need for useMemo()

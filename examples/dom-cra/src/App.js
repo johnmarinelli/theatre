@@ -82,6 +82,7 @@ let lastBoxId = 1
 
 const App = ({project}) => {
   const [boxes, setBoxes] = useState(['0', '1'])
+  console.log('dom-cra')
 
   // This is cheap to call and always returns the same value, so no need for useMemo()
   const sheet = project.sheet('Scene', 'default')
